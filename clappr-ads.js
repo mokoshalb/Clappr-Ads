@@ -39,6 +39,7 @@
         el.style.cursor = 'pointer';
         el.controls = false;
         el.src = src;
+        el.class = 'vidads';
         el.addEventListener('click', function(e) {
             e.stopPropagation();
             window.open(link, '_blank');
