@@ -174,7 +174,6 @@
 
         _onPreRollEnd: function(video, playback) {
             playback.unmute();
-            playback.core.mediaControl.on('capture:base64', (b64) => { var myWindow = window.open("", "_blank"); myWindow.document.write(`<img src="${b64}" />`);});
             this._isAdPlaying = false;
             setTimeout(function() { playback.play(); }, 100);
         },
